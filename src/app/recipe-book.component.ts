@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import {HeaderComponent} from "./header.component";
 
 @Component({
   moduleId: module.id,
   selector: 'recipe-book-app',
   templateUrl: 'recipe-book.component.html',
-  styleUrls: ['recipe-book.component.css']
+  directives: [HeaderComponent]
 })
 export class RecipeBookAppComponent {
   title = 'recipe-book works!';
